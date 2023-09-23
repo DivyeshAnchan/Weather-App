@@ -31,8 +31,8 @@
           />
         </div>
         <div class="temperature">
-          <p>Temperature: <%= parseInt(data.main.temp) %>°C</p>
-          <p>Feels Like: <%= parseInt(data.main.feels_like) %>°C</p>
+          <p>Temperature: <%= parseInt(data.main.temp)-273 %>°C</p>
+          <p>Feels Like: <%= parseInt(data.main.feels_like)-273 %>°C</p>
           <p>Humidity: <%= data.main.humidity %>%</p>
         </div>
         <div class="wind">
